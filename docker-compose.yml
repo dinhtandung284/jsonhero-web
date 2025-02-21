@@ -1,0 +1,10 @@
+services:
+  jsonhero:
+    build: .
+    image: dinhtandung/jsonhero-web-fork
+    ports:
+      - "8889:8787"
+    environment:
+      - SESSION_SECRET=MuhaVN2024
+      - NODE_ENV=production
+    restart: unless-stopped
